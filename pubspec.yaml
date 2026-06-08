@@ -1,6 +1,5 @@
 name: open_ai_anthropic
 description: An anthropic client with OpenAI API Specs.
-publish_to: none
 
 version: 0.3.0
 
@@ -12,8 +11,8 @@ environment:
 dependencies:
   meta: ">=1.17.0 <2.0.0"
   http: ">=1.5.0 <2.0.0"
-  anthropic_sdk_dart: ^3.0.0
-  openai_dart: ^6.0.0
+  anthropic_sdk_dart: ^4.1.0
+  openai_dart: ^6.2.0
   json_annotation: ">=4.11.0 <5.0.0"
   http_interceptor: ^3.0.0
   universal_io: ">=2.3.1 <3.0.0"
@@ -21,6 +20,6 @@ dependencies:
 
 dev_dependencies:
   lints: ^6.1.0
-  build_runner: ^2.14.1
-  json_serializable: ^6.13.1
-  test: ^1.31.0
+  build_runner: ^2.15.0
+  json_serializable: ^6.14.0
+  test: ^1.31.1
