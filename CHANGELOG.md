@@ -1,3 +1,7 @@
+## 0.4.0
+
+- Upgrade dependencies
+
 ## 0.3.0
 
 - Add short-lived and long-lived OAuth2 credentials with auto-detection and refresh logic.

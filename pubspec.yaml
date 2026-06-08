@@ -1,7 +1,7 @@
 name: open_ai_anthropic
 description: An anthropic client with OpenAI API Specs.
 
-version: 0.3.0
+version: 0.4.0
 
 repository: https://github.com/Codelessly/open_ai_anthropic
 
