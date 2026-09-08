@@ -7,7 +7,7 @@ A translation layer that lets you use the OpenAI API interface to interact with 
 ```yaml
 dependencies:
   open_ai_anthropic: <latest_version>
-  openai_dart: ^4.3.0
+  openai_dart: ^8.1.0
 ```
 
 Then run `dart pub get`.
