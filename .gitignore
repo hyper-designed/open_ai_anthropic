@@ -1,23 +1,117 @@
-# https://dart.dev/guides/libraries/private-files
-# Created by `dart pub`
-.dart_tool/
+# ==============================================================================
+# Dart / pub
+# ==============================================================================
 
-# Avoid committing pubspec.lock for library packages; see
-# https://dart.dev/guides/libraries/private-files#pubspeclock.
+# Build and tool output.
+.dart_tool/
+build/
+.packages
+
+# Lockfile. This is a library package, so the lockfile is not committed:
+# https://dart.dev/guides/libraries/private-files#pubspeclock
+# A bare pattern also matches nested packages (example/, tool/, ...).
 pubspec.lock
 
-**/**/*.lock
+# Generated API documentation (`dart doc`).
+doc/api/
 
-claude_credentials.json
+# Test and coverage output.
+coverage/
+lcov.info
+.test_coverage.dart
+
+# Compiled snapshots and kernel output (`dart compile`).
+*.aotsnapshot
+*.dill
+*.jit
+*.jitsnapshot
+*.snapshot
+*.exe
+
+# ==============================================================================
+# Secrets and credentials
+# ==============================================================================
+# None of this may ever be committed. Templates are explicitly re-included so
+# contributors still get a checked-in reference for the variables required.
 
 .env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
 
+# Claude Code OAuth credentials: written by the `bin/generate.dart` login flow
+# and read by ClaudeCodeTokenStore.
+claude_credentials.json
+claude_code_credentials.json
+.credentials.json
+*credentials*.json
+*credentials*.yaml
+
+# Generic secret material.
+secrets.json
+token.json
+tokens.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+
+# ==============================================================================
+# Editors and IDEs
+# ==============================================================================
+
+# IntelliJ IDEA / Android Studio
 .idea/
+*.iml
+*.ipr
+*.iws
 
-build/
+# VS Code. Drop this line, or negate individual files, if you decide to share
+# launch configs with contributors.
+.vscode/
 
+# Visual Studio
+.vs/
+
+# Vim, Emacs, and other editor scratch files.
+*.swp
+*.swo
+*~
+\#*\#
+.history/
+
+# ==============================================================================
+# Operating system
+# ==============================================================================
+
+# macOS
 .DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
 
-**.log
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
 
+# Linux
+.directory
+.Trash-*
+
+# ==============================================================================
+# Local scratch
+# ==============================================================================
+
+# Local research and reference material, not part of the package.
 references/
+
+*.log
+logs/
